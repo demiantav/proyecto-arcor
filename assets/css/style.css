@@ -1,0 +1,531 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    /*background-image: url("../images/dark-blue.jpg");*/
+    background: rgb(9,9,121);
+background: linear-gradient(325deg, rgba(9,9,121,1) 2%, rgba(0,120,254,1) 12%, rgba(2,0,36,1) 72%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-login{
+    
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    border-radius: 1em;
+    background-color: #5f5f918a;
+    color: white;
+    
+}
+
+
+
+.olvido-contraseña{
+
+    font-size: .8em;
+}
+
+.login{
+
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em;
+    border-radius: 1em;
+    
+}
+
+.login> input{
+    
+    padding: .6em;
+    background-color: whitesmoke;
+
+}
+
+#usuario, #pass {
+    
+    border: none;
+    border-bottom: .1em hsl(0, 1%, 52%) solid;
+    outline: none;
+}
+
+#myBtn, .container-relevamiento > button{
+
+    border-radius: 1.5rem;
+    padding: .8em;
+    border: none;
+    background-color: blue;
+    color: white;
+    transition: all .3s ease-in-out;
+    width: 6.5rem;
+    
+}
+
+#myBtn:hover, .container-relevamiento > button:hover{
+
+    cursor:pointer;
+    background-color: hsl(36, 95%, 49%);
+}
+
+
+
+
+
+/*************************PANTALLA PRINCIPAL************************/
+
+.container-principal{
+
+    background: rgb(9,9,121);
+    background: linear-gradient(325deg, rgba(9,9,121,1) 2%, rgba(0,120,254,1) 12%, rgba(2,0,36,1) 72%);
+    height: 100%;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding-top: 2em;
+    
+}
+
+.container-logo-usuario{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    
+}
+
+
+.container-logo-usuario > h2 {
+
+    font-size: clamp(22px,4vw,32px);
+    margin: 1em 1em;
+}
+
+.container-botones{
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1em;
+    
+   
+}
+
+.container-botones> button{
+
+    padding: 1em;
+    border-radius: .9em;
+    margin-bottom: 2em;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease-in;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(12px,4vw,20px);
+    letter-spacing: .4em;
+    background-color: hsl(240, 85%, 35%);
+    word-break: keep-all;
+    
+}
+
+.container-botones span{
+
+    margin-right: .3em;
+}
+
+/*.container-botones> button:nth-child(1){
+
+    background-image: url("../images/og-image.jpg");
+    
+}
+
+.container-botones> button:nth-child(2){
+
+    background-image: url("../images/arcor.jpg_1796290079.webp");
+    
+}
+
+.container-botones> button:nth-child(3){
+
+    background-image: url("../images/og-image.jpg");
+    
+}
+
+.container-botones> button:nth-child(4){
+
+    background-image: url("../images/og-image.jpg");
+    
+}
+
+.container-botones> button:nth-child(5){
+
+    background-image: url("../images/og-image.jpg");
+    
+    
+}*/
+
+.container-botones>button:hover{
+     
+    cursor: pointer;
+    background-color: hsl(36, 95%, 49%);
+    box-shadow: #9f9fce 0px 20px 30px -10px;
+    
+
+}
+
+.button-salir{
+
+    padding: .5em;
+    width: 20%;
+    border-radius: .4em;
+    border: none;
+    margin-bottom: 1em;
+}
+
+.button-salir:hover{
+
+    cursor: pointer;
+    color: white;
+    background-color: red;
+
+}
+
+
+/**************COMERCIOS******************/
+
+.container-icons{
+
+    display: flex;
+    color: white;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: .5em;
+    font-size: 32px;
+    font-weight: bolder;
+    position: sticky;
+    top: 0;
+    background: rgb(9,9,121);
+    background: linear-gradient(325deg, rgba(9,9,121,1) 2%, rgba(0,120,254,1) 12%, rgba(2,0,36,1) 72%);
+
+}
+
+.container-comercios, .container-objetivos{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.titulo-principal-comercios, .titulo-comercio, .container-principal > h2{
+
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    
+}
+
+.container-icons > p:hover{
+
+    cursor: pointer;
+}
+
+.comercio, .objetivo{
+
+    background-color: hwb(32 6% 5%);
+    border-radius: .8em;
+    border: none;
+    padding: .8em;
+    text-align: center;
+    width: clamp(200px,40vw,500px);
+    color: whitesmoke;
+    margin-bottom: 2em;
+    
+    
+}
+
+.comercio:hover, .objetivo:hover{
+
+    cursor: pointer;
+}
+
+.color-objetivo-verde{
+
+    background-color: #78b321;
+}
+
+.color-objetivo-rojo{
+
+    background-color: hsl(0, 69%, 42%);
+}
+
+.color-objetivo-gris{
+
+    background-color: rgb(184, 189, 189);
+}
+
+.id-titulo, .id-objetivo{
+
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.comercio > div {
+
+    margin-bottom: .2em;
+}
+
+.id-titulo,.id-objetivo, .cumplidos, .estado-objetivos {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    
+    
+   
+}
+
+.id-titulo > p, .cumplidos > p, .id-objetivo> p, .estado-objetivos>p{
+
+    margin: .2em;
+}
+
+
+
+/*****************OBJETIVOS******************/
+
+.titulo-direccion{
+
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.estado-objetivos, .cumplidos{
+
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+/**********RELEVAMIENTO DE IMAGENES**********************/
+
+.relevamiento{
+
+    background-color: aliceblue;
+    color: black;
+    border-radius: 1em;
+    margin-top: 1em;
+    width: clamp(250px,50vw,450px);
+    
+}
+
+
+
+.container-relevamiento{
+
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.container-relevamiento > * {
+
+    margin-bottom: 1em;
+}
+
+.container-relevamiento > input {
+    
+    border: none;
+    border-bottom: .1em hsl(0, 1%, 52%) solid;
+    outline: none;
+    padding: .3em;
+    background-color: transparent;
+}
+
+.container-relevamiento > button{
+
+    width: 100%;
+}
+
+.container-relevamiento p {
+
+    font-weight: bolder;
+}
+
+.container-relevamiento img {
+
+    width: 50%;
+    align-self: center;
+}
+
+.titulo-direccion{
+
+    margin-top: .4em;
+}
+
+
+
+/********Cumplimiento***********/
+
+
+.cantidades{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.container-grafico{
+
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+}
+
+.cantidades > p {
+
+    margin-left: 1em;
+    margin-bottom: 1em;
+    
+}
+
+.grafico{
+
+    padding: 1.5em;
+}
+
+.star{
+
+    color: #e6bd0a;
+    font-size: 32px;
+}
+
+
+/*********AYUDA***********/
+
+.container-botones img{
+
+   margin-right: .8em;
+   transform: translateY(3px);
+   width: clamp(12px,2vw,20px);
+   
+}
+
+
+
+
+/********RESTABLECER CONTRASEÑA*******/
+
+.contenedor-restablecer{
+
+    background-color: #FFF;
+    padding: 1rem;
+    width: clamp(290px,60vw,6050px);
+    border-radius: .5em;
+
+
+}
+
+.titulo-restablecer{
+
+    font-size: clamp(23px,5vw,32px);
+    font-weight: bolder;
+}
+
+.contenedor-info-restablecer, form{
+
+    display: grid;
+    place-items: center;
+    width: 100%;
+    
+    
+}
+
+.contenedor-info-restablecer > *{
+
+    margin-top: .5em;
+}
+
+#email-restablecer{
+
+    
+    border-radius: .4em;
+    padding: .4em;
+    width: 60%;
+}
+
+.restablecer, .cancel{
+
+    padding: .5em;
+    border-radius: .6em;
+    width: 10em;
+    background-color: hwb(229 1% 36%);
+    color: white;
+    border-style: none;
+}
+
+.contenedor-botones{
+
+    
+    display: grid;
+    place-items: center;
+    padding: .5em;
+}
+
+.contenedor-botones button{
+
+    margin-top: 1em;
+    transition: all .2s ease-in-out;
+
+}
+
+.contenedor-botones button:hover:not(.cancel){
+
+    cursor: pointer;
+    background-color: hsl(36, 95%, 49%);
+}
+
+.cancel{
+
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid black;
+    
+    
+    
+}
+
+.cancel a{
+
+    color: #000;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    
+    
+    
+}
