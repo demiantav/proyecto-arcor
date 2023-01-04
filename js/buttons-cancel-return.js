@@ -37,12 +37,12 @@ export function returnCloseButtons(returnButton,closeButton,salirButton){
 
         if(evento.target.matches(closeButton)){
               
-            window.location.assign("login.html");
+            window.location.assign("index.html");
         }
 
         if(evento.target.matches(salirButton)){
               
-            window.location.assign("login.html");
+            window.location.assign("index.html");
         }
     })
 }
