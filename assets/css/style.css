@@ -140,10 +140,19 @@ background: linear-gradient(325deg, rgba(9,9,121,1) 2%, rgba(0,120,254,1) 12%, r
     transition: all .3s ease-in;
     font-family: 'Roboto', sans-serif;
     font-size: clamp(12px,4vw,20px);
-    letter-spacing: .4em;
+    letter-spacing: .3em;
     background-color: hsl(240, 85%, 35%);
-    word-break: keep-all;
     
+    
+    
+}
+
+.container-botones a {
+
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 .container-botones span{
@@ -253,7 +262,6 @@ background: linear-gradient(325deg, rgba(9,9,121,1) 2%, rgba(0,120,254,1) 12%, r
     background-color: hwb(32 6% 5%);
     border-radius: .8em;
     border: none;
-    padding: .8em;
     text-align: center;
     width: clamp(200px,40vw,500px);
     color: whitesmoke;
@@ -305,7 +313,7 @@ background: linear-gradient(325deg, rgba(9,9,121,1) 2%, rgba(0,120,254,1) 12%, r
 
 .id-titulo > p, .cumplidos > p, .id-objetivo> p, .estado-objetivos>p{
 
-    margin: .2em;
+    margin: .4em;
 }
 
 
